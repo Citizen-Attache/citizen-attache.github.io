@@ -1,0 +1,62 @@
+/* Custom page CSS
+-------------------------------------------------- */
+#logo {
+  margin: 20px 0 30px; }
+
+.signup-btn {
+  float: left;
+  padding: 22px 40px;
+  background-color: #dc4e23;
+  color: #fff;
+  font-size: 18px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px; }
+  .signup-btn:hover {
+    background-color: #b03f1d;
+    text-decoration: none;
+    color: #fff; }
+
+.section {
+  padding: 50px 0 60px;
+  border-bottom: 1px #ccc solid; }
+
+.sponsors {
+  margin: 60px 0; }
+
+#about {
+  padding-top: 80px; }
+
+#projects {
+  background: #cddde0; }
+  #projects .project {
+    margin-top: 30px; }
+  #projects .project-detail {
+    padding-top: 12px; }
+
+#event-info {
+  background: #e1e9ec; }
+  #event-info .general-info {
+    margin-bottom: 10px;
+    font-size: 21px; }
+  #event-info dl {
+    margin-top: 0; }
+  #event-info dt {
+    font-weight: 600; }
+  #event-info dd {
+    font-weight: 200;
+    margin: 0 0 20px 0;
+    line-height: 28px; }
+
+#event-map {
+  height: 300px; }
+
+#event-schedule {
+  background: #e1e9ec; }
+  #event-schedule caption {
+    font-size: 21px;
+    font-weight: 200;
+    margin-bottom: 10px; }
+  #event-schedule table {
+    background: #fff;
+    border-color: #ccc; }
