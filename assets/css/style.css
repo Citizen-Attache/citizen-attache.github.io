@@ -4,7 +4,6 @@
   margin: 20px 0 30px; }
 
 .signup-btn {
-  float: left;
   padding: 22px 40px;
   background-color: #dc4e23;
   color: #fff;
@@ -27,7 +26,7 @@
 #about {
   padding-top: 80px; }
 
-#description {
+#contact, #description {
   background: #cddde0; }
 
 #projects {
