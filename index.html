@@ -1,58 +1,122 @@
 <!DOCTYPE html>
 <!-- Design by Serena Ngai -->
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Tapping into Canada’s Foreign Aid Data | Citizen Attaché</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <head>
+        <meta charset="utf-8">
+        <title>Tapping into Canada’s Foreign Aid Data | Citizen Attaché</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href="assets/css/summary.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    </head>
 
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-
-  </head>
-
-  <body>
+    <body>
     
-          <!-- Part 1: Wrap all page content here -->
-    <div id="wrap">
-
-      <!-- Fixed navbar -->
-      <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container">
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><div style="margin-top: 10px">
-                <a href="https://twitter.com/citizenattache" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @citizenattache</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-              </div>
-                </li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
-        </div>
-      </div>
-      
-      <section id="about" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <div class="page-header">
-              <h1 style="border-bottom: 1px grey solid">Tapping into Canada’s Foreign Aid Data</h1>
-              <h3>A hackathon for International Development</h3>
+        <!-- Part 1: Wrap all page content here -->
+        <div id="wrap">
+            
+            <!-- Fixed navbar -->
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <div class="nav-collapse collapse">
+                            <ul class="nav">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="legacy">Legacy Site</a></li>
+                                <li><div style="margin-top: 10px">
+                                    <a href="https://twitter.com/citizenattache" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @citizenattache</a>
+                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                </div>
             </div>
-            <p class="lead">
-                Thank you for your interest in the Citizen Attaché hackathon, held in Ottawa from August 24th-25th, 2013. We are currently rebuilding the site to showcase the hackathon projects. In the meantime, check out the legacy event site <a href="legacy">here</a>.
-            </p>
+            
+            <section id="about" >
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <div class="page-header">
+                                <h1 style="border-bottom: 1px grey solid">Tapping into Canada’s Foreign Aid Data</h1>
+                                <h3>A hackathon for International Development</h3>
+                            </div>
+                            <p class="lead">
+                            Thank you for your interest in the Citizen Attaché hackathon, held in Ottawa from August 24th-25th, 2013. We are currently rebuilding the site to showcase the hackathon projects. In the meantime, check out the legacy event site <a href="legacy">here</a>.
+                            </p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <div class="container"> <!--projects-->
+                <div class="row-fluid"> <!--project1-->
+                    <div class="span12 well">
+                        <h2>Project 1: Canadian International Development Platform (CIDP)</h2>
+                        <h4>Project Description: part a: Query and parse in IATI data into CIDP web application</h4> 
+                        <p><em>Submission by: Aniket Bhushan, North-South Institute</em></p>
 
-          </div>
-        </div>
-      </div>
-      </section>
+                        <p>We are interested in, and started building a web application, that would allow us to directly parse in, selectively, IATI data of use to us for further analysis and visualization. The key issue we faced was limiting the size of the query and parse in, and the time taken to execute. The main idea with the CIDP web application is to open up our backend (data warehouse) where we collect and post data from various sources, including on the ground projects. The application also allows users to “mash” datasets on common fields. The solution we’d like is one that allows us to limit what IATI data gets parsed in, and automates the update of the same, when donors post an update. </p>
+
+                        <p>Relevant Links: <a href="http://iatiregistry.org/">IATI Registry</a>, <a href="http://cidpnsi.ca/">CIDP</a>, <a href="http://app.cidpnsi.ca/">CIDP Web App (Prototype)</a></p>
+
+                        <h4>Project Description: part b: Working with multiple development data APIs</h4>
+                        <p><em>Submission by: Aniket Bhushan, North-South Institute</em></p>
+
+                        <p>Proof-of-concept for solution that enables CIDP backend data management web application (see above) to link to and work with multiple development data APIs (e.g. WB, IATI, OECD-DAC). A number of our key data sources, e.g. World Bank data, are already linked via their API. This allows for current data to be presented. However what could be really useful is if a tool (or even a prototype of a tool) could be developed that allows us to work with multiple APIs. In the development data sector, in addition to the World Bank, OECD-DAC, IATI and others (such as research databases which have their own APIs) are important data providers. Bringing their data in via an API, and then restructuring such that the information can be managed around a simple schema (such as by country, or geography), and presenting it via a visualization for further use, could be a neat tool. </p>
+                        <p>Relevant Links: <a href="http://www.oecd.org/dac/stats/idsonline.htm">OECD Stats</a>, <a href="http://data.worldbank.org/node/9">World Bank Data</a>, <a  href="http://www.iatiregistry.org/registry-api">IATI Registry</a>, <a href="http://www.publishwhatyoufund.org/updates/by-topic/iati/crs-xml-iati-whats-big-difference/">IATI vs. CRS</a>.</p>
+                        <p><strong>GitHub: </strong><a href="https://github.com/murphy99/CIDP">Here</a></p>
+                    </div>
+                </div> <!--//project1-->
+                <div class="row-fluid"> <!--project2-->
+                    <div class="span12 well">
+                        <h2>Project 2 IATI geocoding short cut</h2>
+                        <p><em>Submission by: Aniket Bhushan, North-South Institute</em></p>
+                        <p>IATI data is at a detailed project level. Projects info is often at the subnational level. In order to map this information at specific locations, IATI data needs to be “geocoded”. There are detailed geocoding methodologies available, such as the one by DevGateway/AidData (link below). However, since much of the World Bank’s project dataset, comprising over 11,000 projects, has already been “geocoded” (see link), there may be potential to use this resource of comprehensive aid project latitude/longitude information, if a tool can be developed such that it queries relevant fields between donor (Canada) project level aid data (see CIDP link), and existing geocoded files to essentially piggy back on the info.</p>
+                        <p>Relevant Links: <a href="http://www.aiddata.org/content/index/Services/geocoding">AidData Geocoding Overview</a>, <a href="http://maps.worldbank.org/sa/india">World Bank Map Example</a>, <a href="http://cidpnsi.ca/blog/portfolio/open-aid-data-explorer-canadian-aid-projects-around-the-world/">Canada International Development Platform Map</a></p>
+                    </div>
+                </div> <!--//project2-->
+                <div class="row-fluid"> <!--project3-->
+                    <div class="span12 well">
+                        <h2>Project 3: Facilitating the open data process for casual supporter</h2>
+                        <p><em>Submission by: Rob Reid and Mark Boots of <a href="http://www.votomobile.org/">Voto Mobile</a></em></p> 
+
+                        <p>Open data can reduce redundancies in aid projects, fulfills a vital transparency and accountability role to the people, and provides a mine for researchers to draw novel conclusions from. Although there has been progress such as the International Aid Transparency Initiative standards and 25 national open data projects, most of which were launched in the last 3 years [1], there remains massive amounts of unshared data. </p>
+ 
+                        <p>One barrier to sharing is easy integratability with provider's existing systems and formats. The research and engagement tool votomobile.org, for example,  has began encouraging open-data sharing by asking users to provide their raw data, but it does not currently have a system for adapting that data and sending to an existing centralized source where it is useful.</p>
+ 
+                        <p>What sorts of tools could votomobile.org, or other actors in a similar position, use so that their data may be useful to others? Can this be made friendly-enough to be undertaken by organizations with limited computer literacy to involve actors like underbudgeted civil society organizations in developing countries to participate in the open data movement? Create one or more tools that could help Voto and the other organizations it references.</p>
+
+                        <p><strong>Results: </strong><a href="http://can-dev-hack.herokuapp.com/index.html#/">Live Demo</a>, <a href="https://github.com/Peak19/votoviz">GitHub</a></p>
+
+
+
+                    </div>
+                </div> <!--//project3-->
+                <div class="row-fluid"> <!--project4-->
+                    <div class="span12 well">
+                        <h2>Project 4: Increase Canadian's Understanding of Canada's aid efforts</h2>
+                        <p><em>Submitted by Ian Froude, Citizen Attaché - an Engineers Without Borders Canada venture</em></p>
+
+                        <p>Project Description: Over the last few years Canada has released multiple types of foreign aid data that can be interpreted and analyzed. But, Canadians don't always understand what Canada contributes to within international development, nor do many have the know-how to interpret or analyze the data. This challenge is to create a web or mobile application that presents Canadian aid data in a visual form that would be interesting for Canadians.</p> 
+ 
+                        <p>A potential first step on this project is to think about the types of questions Canadians ask about Canada's international aid efforts, and to design the application to answer those questions.</p>
+ 
+                        <p>Relevant Links: <a href="http://aidview.net/">AidView</a>, <a href="http://cidpnsi.ca/">CIDP</a>, <a href="http://openforchange.info/content/visualising-iati-data-technical-newbies">Visualizing IATI Data</a>, <a href="http://tetrahedra.co.uk/eating-my-own-dogfood/">Eating My Own Dog Food</a>. </p>
+ 
+                        <p><strong>Results: </strong><a href="http://touchedaide.u24.ca/api/">Live Demo</a>, <a href="https://github.com/collinglass/cdndevhack">GitHub</a>, <a href="https://basecamp.com/2092759/projects/3646796-canadian-aid-data">BaseCamp</a>.</p>
+
+                    </div>
+                </div>
+                
+        <div class="row-fluid"><div class="span12"><p><strong>Details on two more projects still to be uploaded. Plus, you know, making this site look good. Stay tuned...</strong></p></div></div>
+            </div> <!--//projects-->
+
         </div> <!--//wrap-->
-  </body>
+    </body>
 </html>
