@@ -2,3 +2,14 @@
     background-color:#e4e4ff;
     border-radius:10px;
 }
+
+.accordion-inner {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    padding-top:0px;
+}
+
+.accordion {
+    padding-bottom:0px;
+    margin-bottom:5px;
+}

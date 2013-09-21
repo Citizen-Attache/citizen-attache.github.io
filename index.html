@@ -12,6 +12,7 @@
         <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
         <link href="assets/css/summary.css" rel="stylesheet" type="text/css"/>
 
+
     </head>
 
     <body>
@@ -47,131 +48,88 @@
                                 <h3>A hackathon for International Development</h3>
                             </div>
                             <p class="lead">
-                            Thank you for your interest in the Citizen Attaché hackathon, held in Ottawa from August 24th-25th, 2013. This site showcases some of the projects that were worked on. The legacy event site <a href="legacy">here</a>.
+                            Thank you for your interest in the Citizen Attaché hackathon, held in Ottawa from August 24th-25th, 2013. This site showcases some of the projects that were worked on. The legacy event site <a href="legacy">here</a>. Below is a brief summary of each project from the hackathon, for posterity.
                             </p>
                         
                         </div>
                     </div>
                 </div>
             </section>
-        
-            <div class="container"> <!--projects-->
-                <div class="row-fluid"> <!--project1-->
-                    <div class="span12 well">
-                        <h2>Project 1: Canadian International Development Platform (CIDP)</h2>
-                        <h4>Project Description: part a: Query and parse in IATI data into CIDP web application</h4> 
-                        <p><em>Submission by: Aniket Bhushan, North-South Institute</em></p>
-
-                        <p>We are interested in, and started building a web application, that would allow us to directly parse in, selectively, IATI data of use to us for further analysis and visualization. The key issue we faced was limiting the size of the query and parse in, and the time taken to execute. The main idea with the CIDP web application is to open up our backend (data warehouse) where we collect and post data from various sources, including on the ground projects. The application also allows users to “mash” datasets on common fields. The solution we’d like is one that allows us to limit what IATI data gets parsed in, and automates the update of the same, when donors post an update. </p>
-
-                        <p>Relevant Links: <a href="http://iatiregistry.org/">IATI Registry</a>, <a href="http://cidpnsi.ca/">CIDP</a>, <a href="http://app.cidpnsi.ca/">CIDP Web App (Prototype)</a></p>
-
-                        <h4>Project Description: part b: Working with multiple development data APIs</h4>
-                        <p><em>Submission by: Aniket Bhushan, North-South Institute</em></p>
-
-                        <p>Proof-of-concept for solution that enables CIDP backend data management web application (see above) to link to and work with multiple development data APIs (e.g. WB, IATI, OECD-DAC). A number of our key data sources, e.g. World Bank data, are already linked via their API. This allows for current data to be presented. However what could be really useful is if a tool (or even a prototype of a tool) could be developed that allows us to work with multiple APIs. In the development data sector, in addition to the World Bank, OECD-DAC, IATI and others (such as research databases which have their own APIs) are important data providers. Bringing their data in via an API, and then restructuring such that the information can be managed around a simple schema (such as by country, or geography), and presenting it via a visualization for further use, could be a neat tool. </p>
-                        <p>Relevant Links: <a href="http://www.oecd.org/dac/stats/idsonline.htm">OECD Stats</a>, <a href="http://data.worldbank.org/node/9">World Bank Data</a>, <a  href="http://www.iatiregistry.org/registry-api">IATI Registry</a>, <a href="http://www.publishwhatyoufund.org/updates/by-topic/iati/crs-xml-iati-whats-big-difference/">IATI vs. CRS</a>.</p>
-                        <p><strong>GitHub: </strong><a href="https://github.com/murphy99/CIDP">Here</a></p>
-                    </div>
-                </div> <!--//project1-->
-                <div class="row-fluid"> <!--project2-->
-                    <div class="span12 well">
-                        <h2>Project 2 IATI geocoding short cut</h2>
-                        <p><em>Submission by: Aniket Bhushan, North-South Institute</em></p>
-                        <p>IATI data is at a detailed project level. Projects info is often at the subnational level. In order to map this information at specific locations, IATI data needs to be “geocoded”. There are detailed geocoding methodologies available, such as the one by DevGateway/AidData (link below). However, since much of the World Bank’s project dataset, comprising over 11,000 projects, has already been “geocoded” (see link), there may be potential to use this resource of comprehensive aid project latitude/longitude information, if a tool can be developed such that it queries relevant fields between donor (Canada) project level aid data (see CIDP link), and existing geocoded files to essentially piggy back on the info.</p>
-                        <p>Relevant Links: <a href="http://www.aiddata.org/content/index/Services/geocoding">AidData Geocoding Overview</a>, <a href="http://maps.worldbank.org/sa/india">World Bank Map Example</a>, <a href="http://cidpnsi.ca/blog/portfolio/open-aid-data-explorer-canadian-aid-projects-around-the-world/">Canada International Development Platform Map</a></p>
-                    </div>
-                </div> <!--//project2-->
-                <div class="row-fluid"> <!--project3-->
-                    <div class="span12 well">
-                        <h2>Project 3: Facilitating the open data process for casual supporter</h2>
-                        <p><em>Submission by: Rob Reid and Mark Boots of <a href="http://www.votomobile.org/">Voto Mobile</a></em></p> 
-
-                        <p>Open data can reduce redundancies in aid projects, fulfills a vital transparency and accountability role to the people, and provides a mine for researchers to draw novel conclusions from. Although there has been progress such as the International Aid Transparency Initiative standards and 25 national open data projects, most of which were launched in the last 3 years [1], there remains massive amounts of unshared data. </p>
- 
-                        <p>One barrier to sharing is easy integratability with provider's existing systems and formats. The research and engagement tool votomobile.org, for example,  has began encouraging open-data sharing by asking users to provide their raw data, but it does not currently have a system for adapting that data and sending to an existing centralized source where it is useful.</p>
- 
-                        <p>What sorts of tools could votomobile.org, or other actors in a similar position, use so that their data may be useful to others? Can this be made friendly-enough to be undertaken by organizations with limited computer literacy to involve actors like underbudgeted civil society organizations in developing countries to participate in the open data movement? Create one or more tools that could help Voto and the other organizations it references.</p>
-
-                        <p><strong>Results: </strong><a href="http://can-dev-hack.herokuapp.com/index.html#/">Live Demo</a>, <a href="https://github.com/Peak19/votoviz">GitHub</a></p>
-
-
-
-                    </div>
-                </div> <!--//project3-->
-                <div class="row-fluid"> <!--project4-->
-                    <div class="span12 well">
-                        <h2>Project 4: Increase Canadian's Understanding of Canada's aid efforts</h2>
-                        <p><em>Submitted by Ian Froude, Citizen Attaché - an Engineers Without Borders Canada venture</em></p>
-
-                        <p>Over the last few years Canada has released multiple types of foreign aid data that can be interpreted and analyzed. But, Canadians don't always understand what Canada contributes to within international development, nor do many have the know-how to interpret or analyze the data. This challenge is to create a web or mobile application that presents Canadian aid data in a visual form that would be interesting for Canadians.</p> 
- 
-                        <p>A potential first step on this project is to think about the types of questions Canadians ask about Canada's international aid efforts, and to design the application to answer those questions.</p>
- 
-                        <p>Relevant Links: <a href="http://aidview.net/">AidView</a>, <a href="http://cidpnsi.ca/">CIDP</a>, <a href="http://openforchange.info/content/visualising-iati-data-technical-newbies">Visualizing IATI Data</a>, <a href="http://tetrahedra.co.uk/eating-my-own-dogfood/">Eating My Own Dog Food</a>. </p>
- 
-                        <p><strong>Results: </strong><a href="http://touchedaide.u24.ca/api/">Live Demo</a>, <a href="https://github.com/collinglass/cdndevhack">GitHub</a>, <a href="https://basecamp.com/2092759/projects/3646796-canadian-aid-data">BaseCamp</a>.</p>
-
-                    </div>
-                </div>
-                
-                <div class="row-fluid"> <!--project5-->
-                    <div class="span12 well">
-                        <h2>Project 5 IATI CIDA Project Data Widget</h2>
-                        <p><em>Submitted by: Michael Roberts, Groupsia/Acclar</em></p>
-
-                        <p>The challenge is to develop a proof-of-concept tool that can search the IATI CIDA dataset and parse the resulting xml in order to display specific listings of project/activities that can then be embedded into a website as a javascript widget. Search criteria would be based on the fields in the schema as well as a keyword search.  [Ensure to keep the tool flexible so that more fields can be integrated as the IATI file expands.]</p> 
- 
-                        <p>The result allows a simple means to showcase related projects on a website to a particular topic of interest such as Canada’s involvement in health projects in Haiti. The project listing might also include a link that can then display the entire project in a separate window.</p>
-                        
-                        <p>So for example, Dgroups.org is a space where a lot of development dialogue takes place. So if someone creates a dialogue space on AIDS in Mozambique, it would be useful to have a widget grab the related projects on AIDS in Mozambique for reference and have the dialogues and the project data sitting next to one another. Related, the same widget could be customized for CSO's or anyone who wants to have a webpage with a listing of specific projects next to it. So imagine a Wordpress widget. Someone simply configures it like an RSS feed, and suddenly, they will have a listing of projects on their website.</p>
- 
- 
-                        <p><strong>Results: </strong><a href="http://iati-widget.herokuapp.com/">Live Demo</a>, <a href="http://poeticeconomics.blogspot.ca/">Write-Up</a>.</p>
-
-                    </div>
-                </div> <!--/project5-->
-                
-                <div class="row-fluid"> <!--project6a-->
-                    <div class="span12 well">
-                        <h2>Project 6a: Aid data gaps - A tool to show IATI data gaps in specific countries</h2>
-                        <p><em>Submitted by: Michael Roberts, Groupsia/Acclar</em></p>
-
-                        <p>Currently IATI data is not available in full coverage for many countries around the world.</p> 
- 
-                        <p>This tool would compare the OECD/DAC datasets to the IATI ODA datasets for a particular aid recipient country and identify what gaps exist in the data completeness in a visual presentation. Its purpose is to help identify gaps for researchers and governments. </p>
-                        
-                        <p>A related tool might also then be to create a top ten list of the countries with the most complete IATI coverage as well as those with the least coverage.</p>
- 
-
-                    </div>
-                </div> <!--//project 6a-->
-
-
-                <div class="row-fluid"> <!--project6b-->
-                    <div class="span12 well">
-                        <h2>Project 6b: IATI frequency monitor</h2>
-                        <p><em>Submitted by: Aniket Bhushan, North-South Institute</em></p>
-
-                        <p>A tool that simply monitors and identifies when a donor updates or posts new data to the registry, and visualizes the same info so that developers and others have a sense of how frequently which donors post to the registry. This could be useful as users want to know how timely a picture they are able to get –across different donors – by relying on their IATI feed. </p> 
- 
-                        <p>Relevant Links: <a href="http://www.oecd.org/dac/stats/data.htm">OECD DAC data set</a>, <a href="http://www.iatiregistry.org/">IATI Registry</a>, <a href="http://tracker.publishwhatyoufund.org/publish/">Publish What You Fund Aid Tracker</a>.</p>
- 
-                        <p><strong>Results: </strong><a href="http://iatifreqs.ewb.ca/?path=donors&donor=dfid">Live Demo</a>, <a href="https://github.com/deniszgonjanin/iati_reporting_frequencies">GitHub</a>, <a href="http://slid.es/automatamedia/iatifreqs">Slide Deck</a>.</p>
-                    </div>
-                </div> <!--//project 6b-->
-
- 
-
-
-
-                
-                
-                
-                
-                
+            
+            <div class="container" id="projectSummaries"> <!--projects-->
+            <h3>Hackathon Projects</h3>
             </div> <!--//projects-->
 
         </div> <!--//wrap-->
+        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/underscore-min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/data.js"></script>
+        
+        <script type="text/template" class="template" id="project">
+            <div class="row-fluid">
+                <div class="span12 well">
+                    <h3> <%- title %> </h3>
+                    
+                    <!-- =====Original Submission ===== -->
+                    
+                    <div class="accordion" id="accordian<%-id%>">
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <p><%- summary%> (<a  data-parent="accordian<%-id%>" data-toggle="collapse" href="#collapse<%-id%>">Original Project Statement</a>)</p>
+                            </div>
+                            <div class="accordion-body collapse" id="collapse<%-id%>">
+                                <div class="accordion-inner">
+                                    <p><em><strong>Submitted by:</strong> <%- submitter.name %>,
+                                        <% if (submitter.orgLink) { %>
+                                           <a href="<%- submitter.orgLink %>"><%- submitter.org %></a>
+                                        <% } else { %>
+                                            <%- submitter.org %>
+                                        <% } %>
+                                    </em></p>
+                                    <p><strong>Summary:</strong></p><% _.each(descLong, function (paragraph) { %>
+                                        <p> <%- paragraph %> </p>
+                                    <% }) %>
+                                    
+                                    <% 
+                                    if(links && links.length) { %>
+                                        <p><strong>Relevant Links:</strong>
+                                        <% for (l in links) { %>
+                                            <a href="<%- links[l].link %>"><%-links[l].name%></a><% if (l == links.length - 1) { %>.<% } else { %>,<% } %>
+                                        <% }
+                                    } %>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- =====/Original Submission ===== -->
+
+                    
+
+                    
+                    <% 
+                    if(results && results.length) { %> 
+                        <p><strong>Results:</strong>
+                        <% for (r in results) { %>
+                            <a href="<%- results[r].link %>"><%-results[r].name%></a><% if (r == results.length - 1) { %>.<% } else { %>,<% } %>
+                        <% }
+                    } %>
+                    </p>
+                            
+                </div>
+            </div>
+        </script>
+        
+        
+        <script type="text/javascript">
+            var projectTemplate = _.template($('script#project').html());
+            for (p in data.project) {
+                $('#projectSummaries').append(projectTemplate(data.project[p]));
+            }
+        </script>
+        
     </body>
 </html>
